@@ -58,6 +58,19 @@
             >
           </li>
         </ul>
+
+        <!--Humburger Mobile Menu -->
+        <div class="hamburger-container">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="hamburger-menu-icon" width="32" height="22">
+              <use href="./images/icons.svg#hamburger-icon"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <!-- Main section -->
@@ -295,103 +308,216 @@
           </ul>
         </div>
       </section>
-      <!-- Footer section -->
-      <footer class="page-footer">
-        <div class="container">
-          <!-- Main footer -->
-          <div class="footer">
-            <div class="footer-address">
-              <a class="logo link" href="index.html">
-                <span class="logo">WEB</span
-                ><span class="studio-footer">STUDIO</span>
-              </a>
-              <p class="footer-description">
-                Increase the flow of customers and<br />
-                sales for your business with digital<br />
-                & growth solutions.
-              </p>
-            </div>
+    </main>
+    <!-- Footer section -->
+    <footer class="page-footer">
+      <div class="container">
+        <!-- Main footer -->
+        <div class="footer">
+          <div class="footer-address">
+            <a class="logo link" href="index.html">
+              <span class="logo">WEB</span
+              ><span class="studio-footer">STUDIO</span>
+            </a>
+            <p class="footer-description">
+              Increase the flow of customers and<br />
+              sales for your business with digital<br />
+              & growth solutions.
+            </p>
+          </div>
 
-            <div class="footer-block">
-              <b class="footer-heading">Social media</b>
-              <ul class="social-footer list">
-                <li class="icon-item">
-                  <a
-                    class="link"
-                    href="http://instagram.com"
-                    target="_blank"
-                    rel="nopener noreferrer"
-                    aria-label="Link to Instagram"
-                  >
-                    <svg class="footer-social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#instagram-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icon-item">
-                  <a
-                    class="link"
-                    href="http://twitter.com"
-                    target="_blank"
-                    rel="nopener noreferrer"
-                    aria-label="Link to Twitter"
-                  >
-                    <svg class="footer-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#twitter-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icon-item">
-                  <a
-                    class="link"
-                    href="http://facebook.com"
-                    target="_blank"
-                    rel="nopener noreferrer"
-                    aria-label="Link to Facebook"
-                  >
-                    <svg class="footer-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#facebook.icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icon-item">
-                  <a
-                    class="link"
-                    href="http://linkedin.com"
-                    target="_blank"
-                    rel="nopener noreferrer"
-                    aria-label="Link to LinkedIn"
-                  >
-                    <svg class="footer-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-block">
-              <b class="footer-heading">Subscribe</b>
-              <form class="form-footer">
-                <label>
-                  <input
-                    class="input-email"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                </label>
-                <button class="btn subscribe" type="submit">
-                  Subscribe
-                  <svg class="subscribe-icon" width="24" height="24">
-                    <use href="./images/icons.svg#subscribe-icon"></use>
+          <div class="footer-block">
+            <b class="footer-heading">Social media</b>
+            <ul class="social-footer list">
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="http://instagram.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="footer-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram-icon"></use>
                   </svg>
-                </button>
-              </form>
-            </div>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to Twitter"
+                >
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="http://facebook.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to Facebook"
+                >
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook.icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="http://linkedin.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to LinkedIn"
+                >
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block">
+            <b class="footer-heading">Subscribe</b>
+            <form class="form-footer">
+              <label>
+                <input
+                  class="input-email"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="btn subscribe" type="submit">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#subscribe-icon"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="container-mobile">
+        <div class="menu-mobile-container">
+          <button class="menu-toggle js-close-menu">
+            <svg class="modal-close-icon" width="11" height="11">
+              <use href="./images/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu-content">
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a href="./index.html" class="mobile-menu-link link current-menu"
+                >Studio</a
+              >
+            </li>
+
+            <li class="mobile-menu-item">
+              <a href="./portfolio.html" class="mobile-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="mobile-menu-item">
+              <a href="" class="mobile-menu-link link">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mobile-container-footer">
+            <ul class="mobile-contact-link list">
+              <li class="mobile-contact-item">
+                <a href="tel:+110001111111" class="hamburger-contact-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contact-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="hamburger-email-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-social-list list">
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href="http://instagram.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to Twitter"
+                >
+                  <svg class="mobile-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href="http://facebook.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to Facebook"
+                >
+                  <svg class="mobile-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook.icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a
+                  class="mobile-social-link"
+                  href="http://linkedin.com"
+                  target="_blank"
+                  rel="nopener noreferrer"
+                  aria-label="Link to LinkedIn"
+                >
+                  <svg class="mobile-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
